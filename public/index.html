@@ -9,6 +9,13 @@
 	<main>
 		<h1>{{title}}</h1>
 		<h2>Welcome to the largest piece of Shit</h2>
+		<nav>
+			<ul>
+				<li v-for="page in pages">
+					<a :href="page.link">{{page.title}}</a>
+				</li>
+			</ul>
+		</nav>
 	</main>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
